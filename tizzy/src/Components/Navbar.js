@@ -26,7 +26,7 @@ return (
     <>
     <div className='navbar'>
     
-    {user && user!="cristian" &&
+    {user && user!=="cristian" &&
         <>
         
         <div className='leftside'>
@@ -54,7 +54,7 @@ return (
            
         
         </>}
-        {user && user!="cristian" &&
+        {user && user!=="cristian" &&
         <>
         <div><Link className="navlink" to = "/" style={{marginRight: '170px'}}> ¡Hola {user}!
                 <Icon icon={users} size={20}/>  volver al Inicio  </Link></div>
@@ -74,7 +74,7 @@ return (
 
     </div>
 
-    {user && user=="cristian" &&
+    {user && user==="cristian" &&
         <>
         <div className='rightside'> 
         <AddProducts></AddProducts>
