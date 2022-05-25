@@ -115,13 +115,13 @@ return (
     <>
         <Navbar user={user} totalProducts={totalProducts}/>
         
-       {user=="cristian" &&
+       {user==="cristian" &&
        
          <AddProducts user={user}/>
         
         }
         
-        {products.length > 0 && user!="cristian" && (
+        {products.length > 0 && user!=="cristian" && (
             <div className="container-fluid">
                 <h1 className="text-center"> Productos </h1>
                 <div className ='products-box'> 
@@ -129,7 +129,7 @@ return (
                 </div>
             </div>
         )} 
-        {products.length < 1 && user!="cristian" && (
+        {products.length < 1 && user!=="cristian" && (
             <div className='container-espere'> Porfavor espere...</div>
         )}
     </>

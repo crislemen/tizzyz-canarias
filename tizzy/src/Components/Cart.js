@@ -34,7 +34,6 @@ export const Cart =() => {
    
     //Muestro mis productos en el carro 
     const [cartProducts, setCartProducts] = useState([ ]);
-    const [uid,setUid] = useState(null);
 
     //Aqui, como antes en la home he hecho lo de la coleccion CArt para que cada usuaario tenga una y se guarden los productos,
     //pues aqui simplemente cojo esa coleccion y la muestro para ese usuario en especifico

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
-import { auth, fs } from "./Config/Config";
+import { auth} from "./Config/Config";
 import {useNavigate} from 'react-router-dom'
 import { Navbar } from "./Navbar";
 

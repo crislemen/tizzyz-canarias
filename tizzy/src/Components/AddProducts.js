@@ -75,23 +75,13 @@ export const AddProducts = ({user}) => {
     })
 
    }
-   const [id,setID] = useState('');
-   const handleCartProductDelete = (id) => {
-    auth.onAuthStateChanged(user=>{
-        if(user) {
-            fs.collection('productos ').doc(id).delete().then(()=> {
-                console.log('borrado');
-            })
-        }
-    })
-}
 
 
    //esto solo saldrá para el usuario admin, por lo que cojo el prop de user que le he pasado y hago la comprobacion
     return (
         
         <div className='container-login'>
-           {user && user=="cristian" &&
+           {user && user==="cristian" &&
         <> <h1> <Icon icon={thumbsUp} size={40} style={{color:'green'}}/>Agregar Productos </h1>
         <hr></hr>
         </>
@@ -104,7 +94,7 @@ export const AddProducts = ({user}) => {
         
         </>}
 
-        {user && user=="cristian" &&
+        {user && user==="cristian" &&
         <>
         
         <form autoComplete="off" className="form-group" onSubmit={handleAddProducts}>

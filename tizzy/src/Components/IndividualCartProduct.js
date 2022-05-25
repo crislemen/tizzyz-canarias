@@ -2,7 +2,6 @@ import React from "react";
 import {Icon} from 'react-icons-kit'
 import {plus} from 'react-icons-kit/feather/plus'
 import {minus} from 'react-icons-kit/feather/minus'
-import { cartProducts } from "./CartProducts";
 import { auth,fs } from "./Config/Config";
 
 //Recojo los props del componente cart.
